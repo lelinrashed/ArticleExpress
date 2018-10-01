@@ -3,9 +3,21 @@ html(lang="en")
 head
 	meta(charset="UTF-8")
 	title home - express app
+	link(rel="stylesheet", href="/bower_components/bootstrap/dist/css/bootstrap.css")
 body
-	block content
-	br
-	hr
-	footer
-		p copyright @copy; 2018
+	nav.navbar.navbar-inverse
+		.container-fluid
+			ul.nav.navbar-nav.navbar-inverse
+				li
+					a(href="/") Article
+				li
+					a(href="/article/add") Add Article	
+	.container
+		block content
+		br
+		hr
+		footer
+			p copyright @copy; 2018
+
+	script(src="/bower_components/jquery/dist/jquery.js")
+	script(src="/bower_components/bootstrap/dist/js/bootstrap.js")
